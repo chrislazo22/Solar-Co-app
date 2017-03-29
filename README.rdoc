@@ -1,0 +1,15 @@
+== README
+
+Things you may want to cover:
+
+ruby 2.2.1p85
+rails 4.2.4
+
+
+Test:
+Controllers
+	"Add Solar Panel"
+		
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.

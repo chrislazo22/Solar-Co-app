@@ -1,0 +1,15 @@
+<h1>Add Solar Panel</h1>
+
+<%= form_for(@solar_panel) do |f| %>
+
+  <%= f.label :cell_type, "Cell Type" %>
+	<%= f.text_field :cell_type %>
+
+  <%= f.label :watts %>
+  <%= f.text_field :wattage %>
+
+  <%= f.label :cell_type %>
+  <%= f.text_field :cell_type %>
+
+  <%= f.button :submit %>
+<% end %> 
