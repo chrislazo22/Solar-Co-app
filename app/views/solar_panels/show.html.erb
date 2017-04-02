@@ -1,0 +1,21 @@
+<h1>Solar Panel Added</h1>
+
+<p>
+	<strong>Cell Type:</strong>
+	<%= @solar_panel.cell_type %>
+</p>
+<p>
+	<strong>Solar Panel Wattage:</strong>
+	<%= @solar_panel.wattage %>
+</p>
+<p>
+	<strong>solar Panel Voltage:</strong>
+	<%= @solar_panel.voltage %>
+</p>
+<p>
+	<strong>Image:</strong>
+	<%= @solar_panel.image %>
+</p>
+
+<%= link_to "Edit", edit_solar_panel_path %>
+<%= link_to "Solar Panels", solar_panels_path %>
