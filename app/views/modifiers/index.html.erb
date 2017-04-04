@@ -1,0 +1,25 @@
+<h1>Modifiers</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Modifier Type</th>
+      <th>Amperage</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @modifiers.each do |modifier| %>
+      <tr>
+        <td><%= image_tag(modifier.image) %></td>
+    	<td><%= modifier.mod_type%></td>
+        <td><%= modifier.amperage %></td>
+        <td><%= link_to 'Show', modifier %></td>
+        <td><%= link_to 'Edit', edit_modifier_path(modifier) %></td>
+        <td><%= link_to 'Destroy', modifier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Modifier', new_modifier_path %>

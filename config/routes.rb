@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :solar_panels
+  resources :solar_panels, :modifiers, :batteries
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

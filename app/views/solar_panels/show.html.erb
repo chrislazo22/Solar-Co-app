@@ -9,12 +9,12 @@
 	<%= @solar_panel.wattage %>
 </p>
 <p>
-	<strong>solar Panel Voltage:</strong>
+	<strong>Solar Panel Voltage:</strong>
 	<%= @solar_panel.voltage %>
 </p>
 <p>
 	<strong>Image:</strong>
-	<%= @solar_panel.image %>
+	<%= image_tag(@solar_panel.image) %>
 </p>
 
 <%= link_to "Edit", edit_solar_panel_path %>

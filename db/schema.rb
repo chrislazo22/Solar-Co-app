@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170329043853) do
+ActiveRecord::Schema.define(version: 20170404045915) do
+
+  create_table "batteries", force: :cascade do |t|
+    t.string   "battery_typer"
+    t.integer  "battery_votlage"
+    t.string   "battery_ah_integer"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "modifiers", force: :cascade do |t|
+    t.string   "mod_type"
+    t.decimal  "amperage"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "image"
+  end
 
   create_table "solar_panels", force: :cascade do |t|
     t.string   "cell_type"

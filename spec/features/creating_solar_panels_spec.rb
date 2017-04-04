@@ -7,10 +7,10 @@ feature 'Creating Solar Panel' do
     fill_in 'Cell Type', with: 'Mono or Poly'
     fill_in 'Wattage', with: '100'
     fill_in 'Voltage', with: '21.5'
-    #attach_file('Image', "spec/files/images/100W.jpg")
+    # attach_file('Image', "spec/files/images/100W.jpg")
     click_button 'Add Solar Panel'
     expect(page).to have_content('Solar Panel')
-    expect(page).to have_css("img[src*='100W.jpg']")
+    # expect(page).to have_css("image[src*='100W.jpg']")
   end
 end
 

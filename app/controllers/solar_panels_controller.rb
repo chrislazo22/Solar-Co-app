@@ -18,6 +18,17 @@ class SolarPanelsController < ApplicationController
     @solar_panel = SolarPanel.find(params[:id])
   end
 
+  def destroy
+    @solar_panel.destroy 
+    respond_to do |format|
+      format.html { redirect_to solar_panels_url, notice: 'Product was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  def edit
+  end
+
   private
 
   def set_solar_panel
