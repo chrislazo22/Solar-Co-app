@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  resources :solar_panels, :modifiers, :batteries
+  resources :solar_panels
+
+  namespace :admin do 
+    resources :solar_panels, only: [:index, :new, :create, :destroy]
+    resources :modifiers
+    resources :batts
+    resource :dashboard, only: [:show], controller: :dashboard
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

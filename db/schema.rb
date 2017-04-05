@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170404045915) do
+ActiveRecord::Schema.define(version: 20170405034759) do
 
   create_table "batteries", force: :cascade do |t|
     t.string   "battery_typer"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 20170404045915) do
     t.string   "battery_ah_integer"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+  end
+
+  create_table "batts", force: :cascade do |t|
+    t.string   "batt_type"
+    t.integer  "batt_voltage"
+    t.decimal  "batt_ah"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "image"
   end
 
   create_table "modifiers", force: :cascade do |t|

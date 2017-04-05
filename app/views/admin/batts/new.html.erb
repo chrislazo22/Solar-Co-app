@@ -1,0 +1,18 @@
+<h1>Add New Battery</h1>
+
+<%= form_for @batt do |f| %>
+	<%= f.label :batt_type, 'Battery Type' %>
+  <%= f.text_field :batt_type %>
+
+  <%= f.label :batt_voltage, 'Battery Voltage' %>
+  <%= f.text_field :batt_voltage %>
+
+  <%= f.label :batt_ah, 'Battery Amp-Hours' %>
+  <%= f.text_field :batt_ah %>
+
+  <%= f.label :image, 'Battery Image' %>
+  <%= f.text_field :image %>
+
+  <%= f.submit 'Add Battery' %>
+
+<% end %>

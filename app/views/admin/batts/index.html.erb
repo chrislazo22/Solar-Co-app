@@ -1,0 +1,28 @@
+<h1>Batteries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Battery Type</th>
+      <th>Voltage</th>
+      <th>Amp-Hours</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @batts.each do |batt| %>
+      <tr>
+        <td><%= image_tag(batt.image) %></td>
+    	<td><%= batt.batt_type%></td>
+        <td><%= batt.batt_voltage %></td>
+        <td><%= batt.batt_ah %></td>
+        <td><%= link_to 'Show', batt %></td>
+        <td><%= link_to 'Edit', edit_batt_path(batt) %></td>
+        <td><%= link_to 'Destroy', batt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Battery', new_batt_path %>
