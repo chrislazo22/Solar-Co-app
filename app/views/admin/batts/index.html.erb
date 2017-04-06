@@ -17,12 +17,11 @@
     	<td><%= batt.batt_type%></td>
         <td><%= batt.batt_voltage %></td>
         <td><%= batt.batt_ah %></td>
-        <td><%= link_to 'Show', batt %></td>
-        <td><%= link_to 'Edit', edit_batt_path(batt) %></td>
-        <td><%= link_to 'Destroy', batt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', admin_batts_path %></td>
+        <td><%= link_to 'Destroy', admin_batts_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to 'New Battery', new_batt_path %>
+<%= link_to 'New Battery', new_admin_batt_path %>

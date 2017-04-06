@@ -17,13 +17,12 @@
     		<td><%= solar_panel.wattage %></td>
         <td><%= solar_panel.voltage %></td>
         <td><%= solar_panel.cell_type %></td>
-        <td><%= link_to 'Show', solar_panel %></td>
-        <td><%= link_to 'Edit', edit_solar_panel_path(solar_panel) %></td>
-        <td><%= link_to 'Destroy', solar_panel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', admin_solar_panels_path %></td>
+        <td><%= link_to 'Destroy', admin_solar_panels_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 
-<%= link_to "New Solar Panel", new_solar_panel_path %>
+<%= link_to "New Solar Panel", new_admin_solar_panel_path %>

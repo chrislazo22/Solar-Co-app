@@ -14,12 +14,11 @@
         <td><%= image_tag(modifier.image) %></td>
     	<td><%= modifier.mod_type%></td>
         <td><%= modifier.amperage %></td>
-        <td><%= link_to 'Show', modifier %></td>
-        <td><%= link_to 'Edit', edit_modifier_path(modifier) %></td>
-        <td><%= link_to 'Destroy', modifier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', admin_modifiers_path %></td>
+        <td><%= link_to 'Destroy', admin_modifiers_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to 'New Modifier', new_modifier_path %>
+<%= link_to 'New Modifier', new_admin_modifier_path %>
