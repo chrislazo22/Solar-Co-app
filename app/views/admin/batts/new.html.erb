@@ -1,6 +1,6 @@
 <h1>Add New Battery</h1>
 
-<%= form_for @batt do |f| %>
+<%= form_for([:admin, @batt]) do |f| %>
 	<%= f.label :batt_type, 'Battery Type' %>
   <%= f.text_field :batt_type %>
 

@@ -2,7 +2,7 @@ require 'rails_helper.rb'
 
 feature 'Creating Solar Panel' do 
   scenario 'can create solar panel' do
-    visit '/solar_panels'
+    visit '/admin/solar_panels'
     click_link 'New Solar Panel'
     fill_in 'Cell Type', with: 'Mono or Poly'
     fill_in 'Wattage', with: '100'

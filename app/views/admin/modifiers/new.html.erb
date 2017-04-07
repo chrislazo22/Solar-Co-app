@@ -1,6 +1,6 @@
 <h1>Add New Modifier</h1>
 
-<%= form_for @modifier do |f| %>
+<%= form_for([:admin, @modifier]) do |f| %>
 
   <%= f.label :mod_type, "Modifier Type" %>
   <%= f.text_field :mod_type %>

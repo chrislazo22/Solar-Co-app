@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe SolarPanelsController, type: :controller do
+RSpec.describe Admin::SolarPanelsController, type: :controller do
 
 	describe "Add Solar panel" do 
 		it "creates a product, solar panel" do

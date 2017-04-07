@@ -16,7 +16,7 @@ module Admin
 
     def create
       @batt = Batt.create(batt_params)
-      redirect_to @batt
+      redirect_to admin_batts_path
     end
 
     def destroy

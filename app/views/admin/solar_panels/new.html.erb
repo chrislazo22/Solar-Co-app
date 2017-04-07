@@ -1,6 +1,6 @@
 <h1>Add Solar Panel</h1>
 
-<%= form_for(@solar_panel) do |f| %>
+<%= form_for([:admin, @solar_panel]) do |f| %>
   <div class="feild">
     <%= f.label :cell_type, "Cell Type" %>
   	<%= f.text_field :cell_type %>

@@ -1,0 +1,15 @@
+<h1>Solar Calculator</h1>
+
+<%= form_tag do %>
+	<div>Total watts (W):<%= text_field_tag 'watts' %></div>
+	<div>Run Time:<%= text_field_tag 'run_time' %></div>
+	<div>Modifier Efficiency:<%= text_field_tag 'mod_eff' %></div>
+	<div>Sun Hours:<%= text_field_tag 'sun_hours' %></div>
+	<%= submit_tag 'Calculate' %>
+<% end %>
+<p>
+<div>Minimum System Size: <%= min_sys_size %></div>
+<div>Recommended System Size: <%= rec_sys_size %></div>
+<div>Recommended Battery Size: <%= rec_batt_size %></div>
+</p>
+

@@ -12,7 +12,7 @@ module Admin
 
     def create
       @modifier = Modifier.create(modifier_params)
-      redirect_to @modifier
+      redirect_to admin_modifiers_path
     end
 
     def show
@@ -22,7 +22,7 @@ module Admin
     def destroy
       @modifier.destroy
       respond_to do |format|
-        format.html { redirect_to modifiers_url, notice: 'Product was successfully destroyed.' }
+        format.html { redirect_to admin_modifier_path, notice: 'Product was successfully destroyed.' }
      end
     end
 

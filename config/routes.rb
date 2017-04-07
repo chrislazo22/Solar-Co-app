@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  # get 'solar_panels/index'
+  get '/calculators', to:'calculators#index'
+  post '/calculators', to:'calculators#index'
+  # resources :calculators
 
   namespace :admin do 
     resources :solar_panels, only: [:index, :new, :create, :destroy]
-    resources :modifiers, only: [:index, :new, :create, :destory]
-    resources :batts, only: [:index, :new, :create, :destory]
+    resources :modifiers, only: [:index, :new, :create, :destroy]
+    resources :batts, only: [:index, :new, :create, :destroy]
     resource :dashboard, only: [:show], controller: :dashboard
   end
   # The priority is based upon order of creation: first created -> highest priority.

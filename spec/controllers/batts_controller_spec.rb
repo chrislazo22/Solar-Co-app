@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe BattsController, type: :controller do
+RSpec.describe Admin::BattsController, type: :controller do
 
 end
