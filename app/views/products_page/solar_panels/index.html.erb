@@ -1,0 +1,6 @@
+<h1>Solar Panels</h1>
+
+<% @solar_panels.each do |solar_panel| %>
+
+ 	<%= link_to solar_panel.wattage, solar_panel_path(solar_panel) %>
+<% end %>

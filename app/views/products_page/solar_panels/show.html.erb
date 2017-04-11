@@ -1,0 +1,18 @@
+<h1><%= @solar_panel.wattage %></h1>
+<%= image_tag(@solar_panel.image) %>
+<p>
+	<strong>Cell Type: </strong>
+	<%= @solar_panel.cell_type %>
+</p>
+
+<p>
+	<b>Wattage:</b>
+	<%= @solar_panel.wattage %>
+</p>
+
+<p>
+	<b>Voltage:</b>
+	<%= @solar_panel.voltage %>
+</p>
+
+<%= link_to "Back", solar_panels_path %>
