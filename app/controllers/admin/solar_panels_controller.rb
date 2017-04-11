@@ -12,7 +12,7 @@ module Admin
 
     def create 
       @solar_panel = SolarPanel.create(solar_panel_params)
-      redirect_to @solar_panel
+      redirect_to admin_solar_panels_path
     end
 
     def show

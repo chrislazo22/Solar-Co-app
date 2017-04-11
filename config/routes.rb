@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get '/calculators', to:'calculators#index'
   post '/calculators', to:'calculators#index'
-  # resources :calculators
+
+  scope module: 'products_page' do 
+    resource :products, only: [:show], controller: :products
+  end
 
   namespace :admin do 
     resources :solar_panels, only: [:index, :new, :create, :destroy]
