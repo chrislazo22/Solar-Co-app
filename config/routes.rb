@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get '/calculators', to:'calculators#index'
-  post '/calculators', to:'calculators#index'
+  get '/calculators', to: 'calculators#index'
+  post '/calculators', to: 'calculators#index'
+  get '/main', to: 'main#index'
 
   scope module: 'products_page' do 
     resources :batteries, only: [:index, :show]
