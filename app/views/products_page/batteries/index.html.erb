@@ -1,0 +1,9 @@
+<h1>Batteries</h1>
+
+<% @batts.each do |battery| %>
+	<div><%= link_to battery.batt_ah, battery_path(battery) %> Ah</div>
+<% end %>
+
+<div>
+  <%= link_to "Back", products_path %>
+</div>

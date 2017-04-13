@@ -11,6 +11,12 @@ describe "Products Page" do
     expect(page).to have_content("Modifiers")
     click_on("Modifiers")
     visit "/modifiers"
-    expect(page).to have_content("Efficiency")
+  end
+
+  it "displays link to batteries" do
+    visit "/products"
+    expect(page).to have_content("Batteries")
+    click_on("Batteries")
+    visit "/batteries"
   end
 end
