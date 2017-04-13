@@ -1,0 +1,10 @@
+<h1>Modifiers</h1>
+
+
+<% @modifiers.each do |modifier| %>
+	<div><%= link_to modifier.amperage, modifier_path(modifier) %></div>
+<% end %>
+
+<div>
+  <%= link_to "Back", products_path %>
+</div>

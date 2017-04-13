@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post '/calculators', to:'calculators#index'
 
   scope module: 'products_page' do 
+    resources :modifiers, only: [:index, :show]
     resources :solar_panels, only: [:index, :show]
     resource :products, only: [:show], controller: :products
   end
