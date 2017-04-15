@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :accounts
+  root 'main#index'
   get '/calculators', to: 'calculators#index'
   post '/calculators', to: 'calculators#index'
   get '/main', to: 'main#index'
