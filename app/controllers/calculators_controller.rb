@@ -7,6 +7,10 @@ class CalculatorsController < ApplicationController
     @sun_hours = params[:sun_hours].to_f
   end
 
+  def show
+
+  end
+
   def min_sys_size
       @min = (@watts * @run_time) / @sun_hours
   end
