@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'calculators#index'
-  get '/calculators', to: 'calculators#index'
-  post '/results', to: 'calculators#index'
+  root 'calculators#home'
+  post '/results', to: 'calculators#show'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
