@@ -9,6 +9,10 @@ helper_method :min_sys_size, :rec_sys_size, :rec_batt_size
     @run_time = params[:run_time].to_i
     @mod_eff = params[:mod_eff].to_f / 100
     @sun_hours = params[:sun_hours].to_f
+
+    if @watts == 0
+      redirect_to root_path, notice: "Please input a value for all categories"
+    end
   end
 
   def min_sys_size
