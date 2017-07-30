@@ -1,9 +1,14 @@
-<h1>Solar Calculator</h1>
+<div>
+	<%= form_tag('/results') do %>
+		<label>Total Watts (Watts): </label>
+			<br><%= text_field_tag 'watts'%></br>
+		<label>Run Time (Hours):</label>
+			<br><%= text_field_tag 'run_time' %></br>
+		<label>Modifier Efficiency: </label>
+			<br><%= text_field_tag 'mod_eff' %></br>
+		<label>Sun Hours (Hours): </label>
+			<br><%= text_field_tag 'sun_hours' %></br>
 
-<%= form_tag('/results') do %>
-	<div>Total watts (W):<%= text_field_tag 'watts' %></div>
-	<div>Run Time:<%= text_field_tag 'run_time' %></div>
-	<div>Modifier Efficiency:<%= text_field_tag 'mod_eff' %></div>
-	<div>Sun Hours:<%= text_field_tag 'sun_hours' %></div>
-	<%= submit_tag 'Calculate' %>
-<% end %>
+		<%= submit_tag 'Calculate' %>
+	<% end %>
+</div>

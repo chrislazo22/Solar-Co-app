@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'calculators#home'
   post '/results', to: 'calculators#show'
+  get '/results', to: 'calculators#home'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
